@@ -1,4 +1,4 @@
-package com.joshua.main;
+package com.joshua.springboot;
 
 
 import org.springframework.boot.SpringApplication;
