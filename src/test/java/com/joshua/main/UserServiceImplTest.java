@@ -1,5 +1,6 @@
 package com.joshua.main;
 
+import com.joshua.springboot.service.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -8,8 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserServiceImplTest {
 
-    ApplicationContext context = new AnnotationConfigApplicationContext(UserServiceImpl.class);
-    UserServiceImpl service = context.getBean("userServiceImpl", UserServiceImpl.class);
+    UserServiceImpl service = new UserServiceImpl();
 
     // Tests whether all methods gets created.
 
