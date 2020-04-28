@@ -1,15 +1,13 @@
 package com.joshua.springboot.entity;
 
-import org.springframework.stereotype.Component;
-
-
 public class User {
 
-    // fields
-    private long id;
+    // instance variables
+    private final long id;
     private String name;
     private String surname;
 
+    // all fields constructor
     public User(long id, String name, String surname) {
         this.id = id;
         this.name = name;
